@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        button {
+            width: 30px;
+            margin-top: 4px;
+            box-shadow: 0px 0px 2px red;
+        }
+
+        #clear {
+            width: 64px;
+        }
+
+        input {
+            width: 124px;
+        }
+        .calculator{
+            width: 20%;
+            margin: 90px auto;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- Calculator -->
+
+    <div class="calculator">
+        <div>
+            <input type="text" id="field">
+        </div>
+
+        <div>
+            <button onclick="clr()" id="clear">Clear</button>
+            <button onclick="crs()" id="cross">X</button>
+            <button onclick="calc('/')">/</button>
+        </div>
+        <div>
+            <button onclick="calc(7)">7</button>
+            <button onclick="calc(8)">8</button>
+            <button onclick="calc(9)">9</button>
+            <button onclick="calc('*')">*</button>
+        </div>
+        <div>
+            <button onclick="calc(4)">4</button>
+            <button onclick="calc(5)">5</button>
+            <button onclick="calc(6)">6</button>
+            <button onclick="calc('-')">-</button>
+        </div>
+        <div>
+            <button onclick="calc(1)">1</button>
+            <button onclick="calc(2)">2</button>
+            <button onclick="calc(3)">3</button>
+            <button onclick="calc('+')">+</button>
+        </div>
+        <div>
+            <button onclick="calc('.')">.</button>
+            <button onclick="calc(0)">0</button>
+            <button onclick="calc('.')">.</button>
+            <button onclick="result()">=</button>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

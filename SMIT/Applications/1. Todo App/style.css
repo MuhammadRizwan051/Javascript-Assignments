@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    background-color: #9FCFFF;
+}
+.main{
+    background-color: #fff;
+    width: 50%;
+    width: 200px;
+    height: 50%;
+    height: 500px;
+    margin: auto;
+
+}
+#addItem, #deleteAll {
+    color: #fff;
+    background-color: #FF8C64;
+    width: auto;
+    font-size: 10px;
+    padding: 5px;
+    border-color: black;
+}
+
+.buttons {
+    margin: 8px;
+}

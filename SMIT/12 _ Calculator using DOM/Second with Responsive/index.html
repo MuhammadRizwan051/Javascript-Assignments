@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="./calculator logo.png">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body class="bg-dark">
+
+
+    <div class="container " style="margin-top: 12rem;">
+
+        <div class="calculator mx-auto py-4 px-1" style="background-color: white;">
+
+            <!-- On Off row -->
+            <!-- <div class="row  mx-0 px-2">
+                <div class="col-5 text-center px-0">
+                    <button id="on_off" onclick="on()" class="btn border rounded-pill fs-3 btn-primary w-100">ON</button>
+                </div>
+                <div class="col-5 text-center px-0 ms-auto">
+                    <button id="on_off" onclick="off()" class="btn border rounded-pill fs-3 btn-primary w-100">OFF</button>
+                </div>
+            </div> -->
+
+
+            <div class="row mt-2 mx-0 px-2">
+                <input type="text" class="form-control py-2 fs-3 border-dark" id="field">
+            </div>
+
+            <!-- 1st -->
+            <div class="row mt-4 mx-0">
+                <div class="col-3 text-center px-0">
+                    <button onclick="on()" class="btn border rounded-circle fs-3 px-2 btn-primary w-75">ON</button>
+                </div>
+                <div class="col-3 text-center px-0">
+                    <button onclick="clr()" class="btn border rounded-circle fs-3 px-4 fw-bold btn-danger">C</button>
+                </div>
+                <div class="col-3 text-center px-0">
+                    <button onclick="backspace()" class="btn border rounded-circle fs-3 px-4 fw-bold btn-danger">X</button>
+                </div>
+                <!-- <div class="col-3 text-center px-0">
+                    <button onclick="calc('%')" class="btn border rounded-circle fs-3 px-4 fw-bold btn-success">%</button>
+                </div> -->
+                <div class="col-3 text-center px-0">
+                    <button onclick="calc('/')" class="btn border rounded-circle fs-3 px-4 fw-bold btn-success">/</button>
+                </div>
+            </div>
+
+            <!-- 2nd -->
+            <div class="row mt-4 mx-0">
+                <div class="col-3 text-center px-0">
+                    <button id="btn_shadow" onclick="calc(7)" class="btn border rounded-circle fs-3 px-4 bg-light">7</button>
+                </div>
+                <div class="col-3 text-center px-0">
+                    <button id="btn_shadow"onclick="calc(8)" class="btn border rounded-circle fs-3 px-4 bg-light">8</button>
+                </div>
+                <div class="col-3 text-center px-0">
+                    <button id="btn_shadow" onclick="calc(9)" class="btn border rounded-circle fs-3 px-4 bg-light">9</button>
+                </div>
+                <div class="col-3 text-center px-0">
+                    <button onclick="calc('*')" class="btn border rounded-circle fs-3 px-4 fw-bold btn-success">*</button>
+                </div>
+            </div>
+
+            <!-- 3rd -->
+            <div class="row mt-4 mx-0">
+                <div class="col-3 text-center px-0">
+                    <button id="btn_shadow" onclick="calc(4)" class="btn border rounded-circle fs-3 px-4 bg-light">4</button>
+                </div>
+                <div class="col-3 text-center px-0">
+                    <button id="btn_shadow" onclick="calc(5)" class="btn border rounded-circle fs-3 px-4 bg-light">5</button>
+                </div>
+                <div class="col-3 text-center px-0">
+                    <button id="btn_shadow" onclick="calc(6)" class="btn border rounded-circle fs-3 px-4 bg-light">6</button>
+                </div>
+                <div class="col-3 text-center px-0">
+                    <button onclick="calc('-')" class="btn border rounded-circle fs-3 px-4 fw-bold btn-success">-</button>
+                </div>
+            </div>
+
+            <!-- 4th -->
+            <div class="row mt-4 mx-0">
+                <div class="col-3 text-center px-0">
+                    <button id="btn_shadow" onclick="calc(1)" class="btn border rounded-circle fs-3 px-4 bg-light">1</button>
+                </div>
+                <div class="col-3 text-center px-0">
+                    <button id="btn_shadow" onclick="calc(2)" class="btn border rounded-circle fs-3 px-4 bg-light">2</button>
+                </div>
+                <div class="col-3 text-center px-0">
+                    <button id="btn_shadow" onclick="calc(3)" class="btn border rounded-circle fs-3 px-4 bg-light">3</button>
+                </div>
+                <div class="col-3 text-center px-0">
+                    <button onclick="calc('+')" class="btn border rounded-circle fs-3 px-4 fw-bold btn-success">+</button>
+                </div>
+            </div>
+
+            <!-- 5th -->
+            <div class="row mt-4 mx-0">
+                <!-- <div class="col-3 text-center px-0">
+                    <button classs="btn border rounded-circle fs-3 px-4 bg-light"></button>
+                </div> -->
+                <div class="col-3 text-center px-0">
+                    <button onclick="off()" class="btn border rounded-circle fs-3 px-2 btn-primary w-75">Off</button>
+                </div>
+                <div class="col-3 text-center px-0">
+                    <button id="btn_shadow" onclick="calc(0)" class="btn border rounded-circle fs-3 px-4 bg-light">0</button>
+                </div>
+                <div class="col-3 text-center px-0">
+                    <button id="btn_shadow" onclick="calc('.')" class="btn border rounded-circle fs-3 px-4 bg-light">.</button>
+                </div>
+                <div class="col-3 text-center px-0">
+                    <button onclick="result('=')" class="btn border rounded-circle fs-3 px-4 btn-danger fw-bold">=</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Calculator -->
+
+    <!-- <div class="calculator">
+        <div>
+            <input type="text" id="field">
+        </div>
+
+        <div>
+            <button onclick="clr()" id="clear">Clear</button>
+            <button onclick="crs()" id="cross">X</button>
+            <button onclick="calc('/')">/</button>
+        </div>
+        <div>
+            <button onclick="calc(7)">7</button>
+            <button onclick="calc(8)">8</button>
+            <button onclick="calc(9)">9</button>
+            <button onclick="calc('*')">*</button>
+        </div>
+        <div>
+            <button onclick="calc(4)">4</button>
+            <button onclick="calc(5)">5</button>
+            <button onclick="calc(6)">6</button>
+            <button onclick="calc('-')">-</button>
+        </div>
+        <div>
+            <button onclick="calc(1)">1</button>
+            <button onclick="calc(2)">2</button>
+            <button onclick="calc(3)">3</button>
+            <button onclick="calc('+')">+</button>
+        </div>
+        <div>
+            <button onclick="calc('.')">.</button>
+            <button onclick="calc(0)">0</button>
+            <button onclick="calc('.')">.</button>
+            <button onclick="result()">=</button>
+        </div>
+    </div> -->
+
+
+    <script src="./JS/app.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
+</body>
+
+</html>
